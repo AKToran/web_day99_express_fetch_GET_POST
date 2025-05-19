@@ -5,6 +5,7 @@ const cors = require('cors');
 const port = process.env.PORT || 3000;
 
 app.use(cors());
+//middleware to parse body data of type json
 app.use(express.json());
 
 app.get('/', (req, res)=>{
